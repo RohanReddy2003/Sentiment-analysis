@@ -18,9 +18,9 @@ A hybrid sentiment analysis system combining **LSTM text analysis** and **DeepFa
 flowchart TD
     A[User Upload] --> B{Image/Text?}
     B -->|Image| C[EasyOCR + LSTM]
-    B -->|Text| D[Direct LSTM Processing]
-    C --> E[Sentiment Confidence]
-    A --> F[DeepFace Emotion Analysis]
-    F --> G[Sentiment Mapping]
+    C -->|Text| D[Direct LSTM Processing]
+    C --> E[Text Sentiment]
+    A -->|Face| F[DeepFace Emotion Analysis]
+    F --> G[Facial sentiment]
     E & G --> H[Fusion Algorithm]
     H --> I[(Final Sentiment)]
