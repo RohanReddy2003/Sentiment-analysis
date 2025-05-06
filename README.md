@@ -24,3 +24,19 @@ flowchart TD
     F --> G[Facial sentiment]
     E & G --> H[Fusion Algorithm]
     H --> I[(Final Sentiment)]
+```
+## Installation
+
+# Clone repository
+git clone https://github.com/yourusername/sentiment-fusion.git
+cd sentiment-fusion
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download models
+wget https://yourmodelhost/lstm_model.h5 -P models/
+wget https://yourmodelhost/sentiment_analyzer.pkl -P models/
+
+# Run Flask app
+python app.py
