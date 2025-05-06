@@ -19,8 +19,8 @@ flowchart TD
     A[User Upload] --> B{Image/Text?}
     B -->|Image| C[EasyOCR + LSTM]
     C -->|Text| D[Direct LSTM Processing]
-    C --> E[Text Sentiment]
-    A -->|Face| F[DeepFace Emotion Analysis]
+    D --> E[Text Sentiment]
+    C -->|Face| F[DeepFace Emotion Analysis]
     F --> G[Facial sentiment]
     E & G --> H[Fusion Algorithm]
     H --> I[(Final Sentiment)]
