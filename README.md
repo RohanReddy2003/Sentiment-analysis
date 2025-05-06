@@ -16,7 +16,7 @@ A hybrid sentiment analysis system combining **LSTM text analysis** and **DeepFa
 ## Technical Architecture 🧠
 ```mermaid
 flowchart TD
-    A[User Upload] --> B{Image/Text?}
+    A[User Upload] --> B{Image&Text}
     B -->|Image| C[EasyOCR + LSTM]
     C -->|Text| D[Direct LSTM Processing]
     D --> E[Text Sentiment]
