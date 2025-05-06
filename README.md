@@ -35,7 +35,7 @@ cd sentiment-fusion
 pip install -r requirements.txt
 
 # Download models
-wget https://yourmodelhost/lstm_model.h5 -P models/
+wget https://yourmodelhost/lstm_model.h5 -P models/ 
 wget https://yourmodelhost/sentiment_analyzer.pkl -P models/
 
 # Run Flask app
