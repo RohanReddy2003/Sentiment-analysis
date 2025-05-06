@@ -17,8 +17,8 @@ A hybrid sentiment analysis system combining **LSTM text analysis** and **DeepFa
 ```mermaid
 flowchart TD
     A[User Upload] --> B{Image&Text}
-    B -->|Image| C[EasyOCR + LSTM]
-    C -->|Text| D[Direct LSTM Processing]
+    B -->|Image| C[EasyOCR]
+    C -->|Text| D[Bi-LSTM Processing]
     D --> E[Text Sentiment]
     C -->|Face| F[DeepFace Emotion Analysis]
     F --> G[Facial sentiment]
