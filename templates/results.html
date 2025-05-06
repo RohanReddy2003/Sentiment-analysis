@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+        
+        <div class="image-preview">
+            <img src="{{ url_for('static', filename='uploads/' + image_path) }}" alt="Uploaded Image">
+        </div>
+        
+        <div class="results">
+            <div class="result-section">
+                <h2>Text Analysis</h2>
+                <p><strong>Extracted Text:</strong> {{ results.text }}</p>
+                <p><strong>Sentiment:</strong> {{ results.text_sentiment }} (confidence: {{ "%.2f"|format(results.text_confidence) }})</p>
+            </div>
+            
+            <div class="result-section">
+                <h2>Facial Analysis</h2>
+                <p><strong>Sentiment:</strong> {{ results.face_sentiment }} (confidence: {{ "%.2f"|format(results.face_confidence) }})</p>
+            </div>
+            
+            <div class="final-result">
+                <h2>Final Sentiment</h2>
+                <p class="sentiment-{{ results.final_sentiment|lower }}">{{ results.final_sentiment }}</p>
+            </div>
+            
+            <a href="{{ url_for('index') }}" class="btn">Analyze Another Image</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Sentiment Analysis</h1>
+        <p>Upload an image to analyze text and facial sentiment</p>
+        
+        <form method="POST" enctype="multipart/form-data">
+            <div class="upload-area">
+                <input type="file" name="file" id="file" accept="image/*" required>
+                <label for="file">Choose an image...</label>
+                <button type="submit">Analyze</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

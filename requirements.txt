@@ -1,0 +1,9 @@
+Flask
+tensorflow
+keras
+numpy
+easyocr
+deepface
+Pillow
+Werkzeug
+opencv-python

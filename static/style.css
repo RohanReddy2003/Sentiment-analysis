@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.upload-area {
+    text-align: center;
+    margin: 30px 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label[for="file"] {
+    display: block;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+label[for="file"]:hover {
+    background-color: #2980b9;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+.image-preview {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.result-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.final-result {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.sentiment-positive {
+    color: #2ecc71;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sentiment-negative {
+    color: #e74c3c;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sentiment-neutral {
+    color: #f39c12;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
