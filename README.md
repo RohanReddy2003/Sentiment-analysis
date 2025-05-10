@@ -32,6 +32,12 @@ flowchart TD
 git clone https://github.com/yourusername/sentiment-fusion.git
 cd sentiment-fusion
 
+# Create Virtual Environment
+python -m venv .venv
+
+# Activate venv
+.venv/Scripts/activate
+
 # Install dependencies
 pip install -r requirements.txt
 
