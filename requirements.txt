@@ -8,3 +8,4 @@ Pillow==10.2.0
 Werkzeug==3.0.3
 opencv-python==4.11.0.86
 h5py==3.11.0
+tf-keras
