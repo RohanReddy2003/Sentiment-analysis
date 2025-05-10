@@ -18,7 +18,7 @@ A hybrid sentiment analysis system combining **LSTM text analysis** and **DeepFa
 flowchart TD
     A[User Upload] --> B{Image&Text}
     B -->|Image| C[EasyOCR]
-    C -->|Text| D[text Processing & tokenization]
+    C -->|Text| D[Text pre-processing & tokenization]
     D --> E[Bi-LSTM model]
     E --> F[Text Sentiment]
     C -->|Face| G[DeepFace Emotion Analysis]
